@@ -134,11 +134,6 @@ _G.packer_plugins = {
     path = "/Users/nikhilthapa/.local/share/nvim/site/pack/packer/start/mini.pairs",
     url = "https://github.com/echasnovski/mini.pairs"
   },
-  neovim = {
-    loaded = true,
-    path = "/Users/nikhilthapa/.local/share/nvim/site/pack/packer/start/neovim",
-    url = "https://github.com/rose-pine/neovim"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/nikhilthapa/.local/share/nvim/site/pack/packer/start/nvim-cmp",
