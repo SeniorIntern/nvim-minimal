@@ -11,6 +11,16 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  use 'norcalli/nvim-colorizer.lua'
+
+  use {
+    "pmizio/typescript-tools.nvim",
+    requires = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    config = function()
+      require("typescript-tools").setup {}
+    end,
+  }
+
   use({
     "folke/trouble.nvim",
     config = function()
@@ -40,9 +50,6 @@ return require('packer').startup(function(use)
 
   -- auto tag
   use("windwp/nvim-ts-autotag")
-
-  -- show code context
-  use("nvim-treesitter/nvim-treesitter-context");
 
   use {
     'VonHeikemen/lsp-zero.nvim',
