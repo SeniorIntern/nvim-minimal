@@ -30,12 +30,7 @@ return require('packer').startup(function(use)
     end
   })
 
-  use({
-    'folke/tokyonight.nvim',
-    config = function()
-      vim.cmd('colorscheme tokyonight-storm')
-    end
-  })
+  use("folke/tokyonight.nvim")
 
   use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"})
   use("nvim-treesitter/playground")
@@ -50,6 +45,9 @@ return require('packer').startup(function(use)
 
   -- auto tag
   use("windwp/nvim-ts-autotag")
+
+  -- java lsp
+  use("mfussenegger/nvim-jdtls")
 
   use {
     'VonHeikemen/lsp-zero.nvim',
